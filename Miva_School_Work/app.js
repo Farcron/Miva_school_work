@@ -50,19 +50,3 @@ video.addEventListener('pause', () => {
     playButton.innerHTML = playIconPath;
 });
 
-
-// Scroll Section
-window.addEventListener('scroll', function () {
-    const scrollContainer = document.querySelector('.scroll-container');
-    const videoSection = document.querySelector('.video-section');
-    const contactSection = document.querySelector('.contact-section');
-
-    const scrollPosition = window.scrollY;
-    const videoHeight = videoSection.offsetHeight;
-
-    if (scrollPosition > videoHeight) {
-        contactSection.style.transform = `translateY(${-(scrollPosition - videoHeight)}px)`;
-    } else {
-        contactSection.style.transform = 'translateY(0)';
-    }
-});

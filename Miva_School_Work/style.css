@@ -337,22 +337,16 @@ header {
 }
 
 .free-shipping-section {
-    position: relative;
-    z-index: 3;
     background-color: var(--clr-accent-100);
     padding-block: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .free-shipping-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.scroll-container {
-    position: relative;
-    overflow: hidden;
-    height: 200vh;
 }
 
 .video-section {
@@ -364,7 +358,9 @@ header {
 }
 
 .video-container {
+    width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .video {
@@ -377,17 +373,20 @@ header {
     display: flex;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: none;
     border-radius: 100vmax;
     padding: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
     z-index: 2;
+}
 
-    svg {
-        width: 50px;
-        height: auto;
-    }
+.play-button svg {
+    width: 50px;
+    height: auto;
 }
 
 .play-button:hover {
@@ -397,12 +396,18 @@ header {
 .contact-section {
     position: relative;
     z-index: 2;
-    background-color: var(--clr-accent-100);
-    padding-top: 5rem;
-    margin-top: 80vh;
-    min-height: 100vh;
+    background-color: var(--clr-primary-100);
 }
 
+.contact-container {
+    padding: 5rem 0;
+}
+
+.social-section {
+    position: relative;
+    z-index: 2;
+    background-color: var(--clr-primary-100);
+}
 
 /* Media Queries for Desktop */
 @media (min-width: 50em) {
@@ -723,6 +728,7 @@ body {
     background: var(--clr-primary-100);
     font-family: var(--ff-body), serif;
     color: var(--clr-accent-100);
+    overflow-x: hidden;
 }
 
 
