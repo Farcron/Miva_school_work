@@ -15,6 +15,7 @@
     --fw-bold: 900;
 
     /* Font size reset*/
+    --fs-50: 0.8125rem;
     --fs-100: 0.875rem;
     --fs-200: 1rem;
     --fs-300: 1.125rem;
@@ -150,7 +151,7 @@ header {
     height: 100vh;
     margin: 0;
     width: 100%;
-    padding-left: var(--s-200);
+    padding-left: 2rem;
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
 
@@ -164,7 +165,7 @@ header {
         a {
             color: var(--clr-accent-100);
             text-decoration: none;
-            font-weight: var(--fw-bold);
+            font-weight: var(--fw-semi-bold);
         }
     }
 }
@@ -403,11 +404,126 @@ header {
     padding: 5rem 0;
 }
 
+.contact-details {
+    text-align: center;
+
+    h4 {
+        margin-top: var(--s-500);
+    }
+
+    h2 {
+        margin-block: var(--s-400);
+    }
+}
+
 .social-section {
     position: relative;
     z-index: 2;
     background-color: var(--clr-primary-100);
 }
+
+.contact-details form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--s-400);
+    gap: 4rem;
+}
+
+.contact-details input[type="email"] {
+    padding-bottom: var(--s-50);
+    border: none;
+    width: 150%;
+    border-bottom: 1px solid var(--clr-accent-100);
+    background: none;
+    color: white;
+    font-size: var(--fs-100);
+}
+
+#contactForm::placeholder {
+    color: var(--clr-accent-200);
+    font-size: var(--fs-100);
+}
+
+input:focus {
+    outline: none;
+}
+
+.contact-details button {
+    padding: 5px;
+    margin-bottom: var(--s-500);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--clr-accent-100);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.footer-section {
+    padding-block: 5rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 200px;
+    }
+}
+
+.right-footer-section {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-50);
+
+    a {
+        color: var(--clr-accent-200);
+        font-size: var(--fs-50);
+    }
+
+}
+
+.legal-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-50);
+
+    a {
+        color: var(--clr-accent-200);
+        font-size: var(--fs-50);
+    }
+
+}
+
+.reserved {
+    text-align: center;
+}
+
 
 /* Media Queries for Desktop */
 @media (min-width: 50em) {
@@ -671,6 +787,10 @@ header {
     font-size: var(--fs-600);
 }
 
+.fs-50 {
+    font-size: var(--fs-50);
+}
+
 .fs-100 {
     font-size: var(--fs-100);
 }
@@ -707,12 +827,28 @@ header {
     margin-bottom: var(--s-400);
 }
 
+.mb-300 {
+    margin-bottom: var(--s-500);
+}
+
 .mt-100 {
-    margin-bottom: var(--s-200);
+    margin-top: var(--s-50);
 }
 
 .mt-200 {
-    margin-bottom: var(--s-400);
+    margin-top: var(--s-400);
+}
+
+.mt-300 {
+    margin-top: var(--s-500);
+}
+
+.mt-400 {
+    margin-top: 4rem;
+}
+
+.mt-500 {
+    margin-top: 7rem;
 }
 
 .pt-100 {
@@ -770,4 +906,4 @@ fill="#191B1F"/></svg>
 
 /* Play Button
 <svg width="148" height="148" viewBox="0 0 148 148" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M74 0.665527C33.4991 0.665527 0.666626 33.498 0.666626 73.9989C0.666626 114.5 33.4991 147.332 74 147.332C114.501 147.332 147.333 114.5 147.333 73.9989C147.333 33.498 114.501 0.665527 74 0.665527ZM57.9982 48.1061C57.3333 48.9943 57.3333 50.5852 57.3333 53.7671V94.2293C57.3333 97.4112 57.3333 99.0022 57.9982 99.8904C58.5777 100.664 59.4647 101.149 60.4291 101.218C61.5358 101.297 62.8741 100.436 65.5506 98.7157L97.0213 78.4845C99.3439 76.9914 100.505 76.2449 100.906 75.2956C101.257 74.4662 101.257 73.5303 100.906 72.7008C100.505 71.7516 99.3439 71.005 97.0213 69.5119L65.5507 49.2808C62.8741 47.5602 61.5358 46.6999 60.4291 46.7789C59.4647 46.8478 58.5777 47.3321 57.9982 48.1061Z" fil
+<path fill-rule="evenodd" clip-rule="evenodd" d="M74 0.665527C33.4991 0.665527 0.666626 33.498 0.666626 73.9989C0.666626 114.5 33.4991 147.332 74 147.332C114.501 147.332 147.333 114.5 147.333 73.9989C147.333 33.498 114.501 0.665527 74 0.665527ZM57.9982 48.1061C57.3333 48.9943 57.3333 50.5852 57.3333 53.7671V94.2293C57.3333 97.4112 57.3333 99.0022 57.9982 99.8904C58.5777 100.664 59.4647 101.149 60.4291 101.218C61.5358 101.297 62.8741 100.436 65.5506 98.7157L97.0213 78.4845C99.3439 76.9914 100.505 76.2449 100.906 75.2956C101.257 74.4662 101.257 73.5303 100.906 72.7008C100.505 71.7516 99.3439 71.005 97.0213 69.5119L65.5507 49.2808C62.8741 47.5602 61.5
