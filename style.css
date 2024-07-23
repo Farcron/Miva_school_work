@@ -226,8 +226,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    line-height: 1.8;
+    line-height: 1.5;
     justify-content: center;
 
     img {
@@ -244,9 +243,7 @@ header {
 .new-in-heading {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .new-in-heading p {
@@ -291,16 +288,11 @@ header {
     padding-block: 5rem;
 }
 
-.about-us-heading {
-    text-align: center;
-}
-
 .about-us-container {
     display: grid;
     grid-auto-columns: auto;
     margin-inline: auto;
     gap: 1rem;
-    text-align: center;
 }
 
 .button {
@@ -314,10 +306,6 @@ header {
 
 .featured-section {
     padding-bottom: 5rem;
-}
-
-.featured-container {
-    text-align: center;
 }
 
 .featured-image {
@@ -409,7 +397,6 @@ header {
 }
 
 .contact-details {
-    text-align: center;
 
     h4 {
         margin-top: var(--s-500);
@@ -428,8 +415,6 @@ header {
 
 .contact-details form {
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: var(--s-400);
     gap: 4rem;
 }
@@ -488,14 +473,21 @@ input:focus {
     align-items: center;
 
     img {
-        width: 200px;
+        width: 80vw;
     }
 }
 
 .right-footer-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+
+    h3 {
+        font-size: 14px;
+    }
+}
+
+.location-container p {
+    font-size: 11px;
 }
 
 .footer-links {
@@ -506,7 +498,7 @@ input:focus {
 
     a {
         color: var(--clr-accent-200);
-        font-size: var(--fs-50);
+        font-size: 11px;
     }
 }
 
@@ -518,7 +510,7 @@ input:focus {
 
     a {
         color: var(--clr-accent-200);
-        font-size: var(--fs-50);
+        font-size: 11px;
     }
 }
 
@@ -546,7 +538,7 @@ input:focus {
         }
 
         p {
-            font-size: var(--fs-400);
+            font-size: var(--fs-300);
             color: var(--clr-accent-200);
         }
     }
