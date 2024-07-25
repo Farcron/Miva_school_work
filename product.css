@@ -1,0 +1,29 @@
+.product-container {
+    padding-block: 2rem;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.product-details a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--clr-primary-100);
+    max-width: 100%;
+}
+
+.product-sizes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#size-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: var(--fs-100);
+}

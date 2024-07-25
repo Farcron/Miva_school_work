@@ -1,0 +1,33 @@
+.shop-section {
+    padding-top: 1rem;
+}
+
+.shop-heading {
+    padding-block: 2rem;
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    text-align: center;
+}
+
+.collection-item {
+    img {
+        margin-bottom: var(--s-50);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--clr-accent-200);
+        font-size: var(--fs-100);
+    }
+}
+
+
+
