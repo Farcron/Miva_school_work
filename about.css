@@ -1,0 +1,34 @@
+.about-section,
+.leaders-section {
+    padding-block: 5rem;
+}
+
+.about-container,
+.mission-section,
+.leader-container {
+    text-align: center;
+}
+
+.right-mission-section img {
+    width: 100%;
+    height: auto;
+}
+
+.leader-profile img {
+    width: 100%;
+    height: auto;
+    border-radius: 100vmax;
+}
+
+/* Styles for medium-sized phones (435px - 767px) */
+@media (min-width: 27.1875em) and (max-width: 48.0em) {
+
+}
+
+/* Styles for tablets  (768px - 1023px) */
+@media (min-width: 48.0625em) and (max-width: 63.9375em) {
+}
+
+/* Styles for large tablets, desktops and large desktops  (1024px - 1920px) */
+@media (min-width: 64em) and (max-width: 120em) {
+}

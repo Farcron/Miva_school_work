@@ -303,8 +303,12 @@ header {
     font-size: var(--fs-100);
     font-weight: var(--fw-bold);
     border: none;
-    cursor: pointer;
     background-color: var(--clr-accent-100);
+}
+
+.about-us-right-container a {
+    text-decoration: none;
+    color: var(--clr-primary-100);
 }
 
 .featured-section {
@@ -580,9 +584,6 @@ input:focus {
             margin: auto;
         }
     }
-
-
-
 }
 
 /* Styles for tablets  (768px - 1023px) */
@@ -667,7 +668,7 @@ input:focus {
             font-size: clamp(0.875rem, 1vw, 0.9375rem);
         }
 
-        button {
+        a {
             width: fit-content;
         }
     }
@@ -741,7 +742,6 @@ input:focus {
     .reserved p {
         font-size: var(--fs-200);
     }
-
 }
 
 /* Styles for large tablets, desktops and large desktops  (1024px - 1920px) */
@@ -875,10 +875,10 @@ input:focus {
         justify-content: space-between;
 
         p {
-            font-size: clamp(1rem, 1vw, 1.125rem);
+            font-size: clamp(1rem, 2vw, 1.125rem);
         }
 
-        button {
+        a {
             width: fit-content;
         }
     }
@@ -989,8 +989,6 @@ input:focus {
     .reserved p {
         font-size: var(--fs-300);
     }
-
-
 }
 
 
