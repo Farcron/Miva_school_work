@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
           rel="stylesheet"/>
     <link href="style.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="about.css">
-    <title>FASHION 90'S/ABOUT</title>
+    <link rel="stylesheet" href="product.css">
+
+    <title>FASHION 90'/PRODUCT</title>
 </head>
 <body>
 
@@ -35,7 +36,7 @@
                         </a>
                     </li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">New</a></li>
+                    <li><a href="shop.html">Shop</a></li>
                     <li><a href="#">Men</a></li>
                     <li><a href="#">Women</a></li>
                     <li><a href="#">Kids</a></li>
@@ -69,64 +70,25 @@
 
 <!-- The main section starts here-->
 <main>
-    <section class="about-section">
-        <div class="container">
-            <div class="about-container">
-                <h1 class="fs-401 mb-100 fw-semi-bold">
-                    About Us
-                </h1>
-                <p class="fs-200 lh-100 text-primary-200">
-                    Welcome to Fashion 90's! We bring back the iconic '90s fashion with a modern twist.
-                    Our mission is to offer high-quality, sustainable pieces that capture the timeless appeal of '90s style.
-                    Join us in celebrating self-expression and the unique charm of '90s fashion.
-                </p>
+    <section class="product-container" id="product-container">
+            <div class="product-image-container">
+                <img id="product-image" src="" alt="Product Image">
             </div>
-        </div>
-    </section>
 
-    <section class="mission-section">
-        <div class="container">
-            <div class="mission-columns">
-                <div class="left-mission-section">
-                    <h2 class="fs-401 mb-100 fw-semi-bold">
-                        Our Mission
-                    </h2>
-
-                    <p class="fs-200 lh-100 text-primary-200 mb-100">
-                        Our mission is to revive '90s fashion, blending nostalgia with contemporary style.
-                        We aim to provide sustainable, high-quality clothing that captures the spirit of the '90s and inspires a love for timeless fashion.
-                    </p>
-                </div>
-
-                <div class="right-mission-section">
-                    <img src="assets/image-9.png" alt="image">
+            <div class="container">
+                <div class="product-details mt-200">
+                    <h1 id="product-name"></h1>
+                    <div class="product-sizes mb-300 mt-300">
+                        <h3 class="fs-100">Available Sizes</h3>
+                        <ul id="size-list">
+                            <!-- Sizes will be dynamically added here -->
+                        </ul>
+                    </div>
+                    <a href="#"  class="button" id="inquiry-button">Check for Inquiry</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="leaders-section">
-        <div class="container">
-            <div class="leader-container">
-                <h2 class="fs-401 mb-100 fw-semi-bold">
-                    Meet Our Leaders
-                </h2>
-
-                <p class="fs-200 lh-100 text-primary-200 mb-100">
-                    Discover the passionate visionaries behind Fashion 90's,
-                    dedicated to reviving the best of '90s fashion with a modern twist.
-                </p>
-
-                <div class="leader-profile">
-                    <img src="assets/My-Image.jpg" alt="Leader image">
-
-                    <h3 class="fs-300 fw-bold mt-100">Chancellor Nzenwa</h3>
-                    <h4 class="text-primary-200 fw-semi-bold mt-100 fs-100">Founder and CEO</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
+        </section>
 </main>
 <!-- The main section ends here-->
 
@@ -149,7 +111,7 @@
                     </h3>
 
                     <p class="text-primary-200 mt-100">
-                        Nigeria
+                      Nigeria
                     </p>
                 </div>
 
@@ -186,5 +148,7 @@
 <!-- The footer section ends here-->
 
 <script src="app.js"></script>
+<script src="product.js"></script>
+
 </body>
 </html>
