@@ -1,6 +1,6 @@
 .about-section,
 .leaders-section {
-    padding-block: 8rem;
+    padding-block: 5rem;
 }
 
 .about-container,
@@ -49,6 +49,10 @@
 
 /* Styles for large tablets, desktops and large desktops  (1024px - 1920px) */
 @media (min-width: 64em) and (max-width: 120em) {
+    .about-section,
+    .leaders-section {
+        padding-block: 8rem;
+    }
 
     .mission-columns {
         display: grid;
