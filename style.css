@@ -707,7 +707,7 @@ input:focus {
     }
 
     .footer-logo-container p {
-        font-size: var(--fs-100);
+        font-size: var(--fs-200);
     }
 
     .right-footer-section {
@@ -955,7 +955,7 @@ input:focus {
     }
 
     .footer-logo-container p {
-        font-size: var(--fs-200);
+        font-size: var(--fs-300);
     }
 
     .right-footer-section {
