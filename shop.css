@@ -1,9 +1,13 @@
 .shop-section {
     padding-top: 1rem;
+    width: 100%;
+    position: relative;
+    height: 100vh;
 
     .video {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
