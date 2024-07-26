@@ -31,3 +31,43 @@
     gap: 1rem;
     font-size: var(--fs-100);
 }
+
+/* Styles for large tablets, desktops and large desktops  (1024px - 1920px) */
+@media (min-width: 64em) and (max-width: 120em) {
+    .product-container {
+        padding-block: 4rem;
+    }
+
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2rem;
+
+        img {
+            height: auto;
+        }
+    }
+
+    .product-details {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-inline: auto;
+        row-gap: 2rem;
+
+        h1 {
+            font-size: var(--fs-300);
+            font-weight: var(--fw-semi-bold);
+        }
+
+        a {
+            padding-block: 1rem;
+            font-size: 1rem;
+        }
+    }
+
+    .product-sizes {
+    }
+}
+

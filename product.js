@@ -51,7 +51,7 @@ function fetchProductData(productId) {
         },
 
         '6': {
-            imageUrl: 'assets/man-3.png',
+            imageUrl: 'assets/men-3.png',
             name: 'Dynamic Movement',
             sizes: ['S', 'M', 'L', 'XL']
         },

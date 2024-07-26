@@ -1,5 +1,10 @@
 .shop-section {
     padding-top: 1rem;
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .shop-heading {
@@ -26,8 +31,50 @@
         text-decoration: none;
         color: var(--clr-accent-200);
         font-size: var(--fs-100);
+        font-weight: var(--fw-semi-bold);
     }
 }
 
 
+/* Styles for tablets  (768px - 1023px) */
+@media (min-width: 48.0625em) and (max-width: 63.9375em) {
+    .shop-heading p {
+        width: 70%;
+    }
 
+    .collection-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Styles for large tablets, desktops and large desktops  (1024px - 1920px) */
+@media (min-width: 64em) and (max-width: 120em) {
+
+    .shop-section {
+        img {
+            height: 50vw;
+            object-fit: fill;
+        }
+    }
+
+    .shop-heading p {
+        width: 70%;
+        font-size: clamp(1rem, 1vw, 1.125rem);
+
+    }
+
+    .collection-container {
+        grid-template-columns: repeat(4, 1fr);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .collection-item {
+
+        a {
+            font-size: var(--fs-200);
+        }
+    }
+}
