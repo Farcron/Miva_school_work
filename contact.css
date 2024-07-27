@@ -1,0 +1,78 @@
+.contact-header {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.contact-us-section {
+    padding-block: 4rem;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.call-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    a {
+        text-align: center;
+        color: var(--clr-primary-100);
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+.email-container {
+    padding-block: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    a {
+        text-align: center;
+        color: var(--clr-primary-100);
+        font-size: 1rem;
+        text-decoration: none;
+    }
+}
+
+.faq-section {
+
+    input[type="text"] {
+        padding-bottom: var(--s-50);
+        border: none;
+        width: 70%;
+        border-bottom: 1px solid var(--clr-accent-100);
+        background: none;
+        color: white;
+        font-size: var(--fs-100);
+    }
+}
+
+/* Styles for large tablets, desktops and large desktops  (1024px - 1920px) */
+@media (min-width: 64em) and (max-width: 120em) {
+
+    .email-container {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .call-email-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .faq-section {
+        padding-block: 4rem;
+    }
+}
